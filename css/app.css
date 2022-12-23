@@ -83,10 +83,11 @@ body {
     font-size: 100%;
     min-height: 100vh;
     background-color: var(--blanco);
-    color: #f4f4f4;
+    color: #afafaf;
     -font-smooth:"always";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
 }
 
 .circulos{
@@ -96,17 +97,20 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(158, 255, 128, 0.452) ;
+    background-color: rgba(122, 122, 122, 0.452) ;
     z-index: 1;
     filter: blur(75px);
+    
     
 
 }
 .circulos .circulo{
-    position: absolute;
+    position: fixed;
     width: 70%;
     height: 70%;
     animation:circulo1 100s linear infinite alternate-reverse both;
+    mix-blend-mode: multiply;
+    
     
 }
 .circulos .circulo1{
@@ -162,9 +166,10 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    
-
+   
     display: none;
+
+    
 }
 
 .header .h1{
@@ -185,6 +190,7 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    
 }
 .header .li{
     margin:0 1.5em;
@@ -251,6 +257,7 @@ body {
     font-weight: 600;
     font-size: 5em;
     line-height: 1.5em;
+    mix-blend-mode: difference;
     
     
 }
@@ -259,13 +266,41 @@ body {
     font-size: 3.2em;
     font-weight: 100;
     font-style:normal;
+    mix-blend-mode: difference;
     
+}
+.seccion .h3A{
+    font-family:var(--tipo-principal);
+    font-size: 2.2em;
+    font-weight: 100;
+    font-style:normal;
+    mix-blend-mode: difference;
+    transform: scale(1);
+    transition: all.7s ease;
+    
+}
+.seccion .h3A:hover{
+    transform: scale(1.2)
+}
+
+.seccion1{
+    width: 100%;
+    min-height: 80vh;
+    
+    margin: 1em 0;
+    padding: 2em;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 .seccion1 .h2{
     font-family:var(--tipo-principal);
     font-weight: 600;
     font-size: 5em;
     line-height: 1.5em;
+    mix-blend-mode: difference;
     transform: scale(1.2);
 
     transition: all.5s ease;
@@ -280,9 +315,10 @@ body {
     font-size: 3.2em;
     font-weight: 100;
     font-style:normal;
+    mix-blend-mode: difference;
     transform: scale(1.2);
     
-    transition: all.5s ease;  
+    transition: all.3s ease;  
 }
 
 .seccion1 .h3:hover{
@@ -301,24 +337,40 @@ body {
 }
 
 
-.seccion .svg{
+.seccion .svg1{
     width: 2em;
     height: 3em;
+    mix-blend-mode: difference;
     /*background: red;*/
     
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(0deg);
     
-    transition: all.5s ease;
+    transition: all.17s ease;
     
 }
-.seccion .svg:hover{
-    transform: scale(1);
+.seccion .svg1:hover{
+    transform: scale(1) rotate(360deg);
+    
+}
+.seccion .svg2{
+    width: 2em;
+    height: 3em;
+    mix-blend-mode: difference;
+    /*background: red;*/
+    
+    transform: scale(1.2) rotate(0deg);
+    
+    transition: all.17s ease;
+    
+}
+.seccion .svg2:hover{
+    transform: scale(1) rotate(360deg);
     
 }
 .seccion .article{
     width: 100%;
     min-height: 50vh;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
 
     display: flex;
     flex-flow: column nowrap;
@@ -395,17 +447,30 @@ body {
     margin: 0 1em;
 }
 .about .a{}
-.about .svg{
+.about .svg1{
     width: 3em;
     height: 3em;
     /*background: red;*/
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(0deg);
     
     transition: all.5s ease;
     
 }
-.about .svg:hover{
-    transform: scale(1);
+.about .svg1:hover{
+    transform: scale(1) rotate(15deg);
+    
+}
+.about .svg2{
+    width: 3em;
+    height: 3em;
+    /*background: red;*/
+    transform: scale(1.2) rotate(0deg);
+    
+    transition: all.5s ease;
+    
+}
+.about .svg2:hover{
+    transform: scale(1) rotate(-15deg);
     
 }
 
@@ -416,7 +481,7 @@ body {
     color: var(--blanco);
     position: relative;
     z-index: 2;
-    animation: pulse 3s ease infinite alternate-reverse;
+    animation: pulse 1s ease infinite alternate-reverse;
 }
 .footer .span{}
 
@@ -436,10 +501,23 @@ body {
 }
 @keyframes pulse {
     from {
-        transform: scale(1);
+        transform: scale(.8);
     }
     to{
-        transform: scale(1.2);
+        transform: scale(1);
     }
     
+}
+
+#cursor{
+    width: 5em;
+    height: 5em;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    pointer-events: none;
+    border-radius: 50%;
+    mix-blend-mode: difference;
 }
