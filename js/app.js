@@ -4,7 +4,7 @@
 $(document).ready(function(){
     
     $('body').on({ 'mousemove' : function( e ){
-        console.clear()
+        console.log( 'holi' )
         let clientX = e.originalEvent.clientX
         let clientY = e.originalEvent.clientX 
         $('#cursor').css({

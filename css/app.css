@@ -83,7 +83,7 @@ body {
     font-size: 100%;
     min-height: 100vh;
     background-color: var(--blanco);
-    color: #afafaf;
+    color: #919191;
     -font-smooth:"always";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -277,6 +277,9 @@ body {
     mix-blend-mode: difference;
     transform: scale(1);
     transition: all.7s ease;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
     
 }
 .seccion .h3A:hover{
@@ -285,15 +288,18 @@ body {
 
 .seccion1{
     width: 100%;
-    min-height: 80vh;
+    min-height: 70vh;
     
     margin: 1em 0;
     padding: 2em;
+    
 
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    
 }
 .seccion1 .h2{
     font-family:var(--tipo-principal);
@@ -301,6 +307,8 @@ body {
     font-size: 5em;
     line-height: 1.5em;
     mix-blend-mode: difference;
+    align-items: center;
+    justify-content: center;
     transform: scale(1.2);
 
     transition: all.5s ease;
@@ -315,6 +323,7 @@ body {
     font-size: 3.2em;
     font-weight: 100;
     font-style:normal;
+    align-items: center;
     mix-blend-mode: difference;
     transform: scale(1.2);
     
@@ -521,3 +530,5 @@ body {
     border-radius: 50%;
     mix-blend-mode: difference;
 }
+
+
