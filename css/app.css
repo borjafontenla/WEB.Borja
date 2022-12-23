@@ -230,6 +230,7 @@ body {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    cursor: none;
 }
 
 .seccion .ul{
@@ -523,8 +524,8 @@ body {
 }
 
 #cursor{
-    width: 5em;
-    height: 5em;
+    width: 2em;
+    height: 2em;
     background-color: white;
     position: relative;
     top: 0;

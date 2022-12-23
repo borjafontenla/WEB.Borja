@@ -8,8 +8,8 @@ $(document).ready(function(){
     let clientX = e.originalEvent.clientX 
     let clientY = e.originalEvent.clientY 
     $('#cursor').css({ 
-        'left' : (clientX - 40) + 'px',
-        'top' : (clientY - 40) + 'px'
+        'left' : (clientX - 16) + 'px',
+        'top' : (clientY - 16) + 'px'
         })
     }})
 
