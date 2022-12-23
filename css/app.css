@@ -294,6 +294,13 @@ body {
     transform: scale(1.2)
 }
 
+ .rrss {
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center ;
+    align-items: center;
+}
 .seccion1{
     width: 100%;
     min-height: 70vh;
