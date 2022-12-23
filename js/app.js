@@ -3,15 +3,10 @@
 
 $(document).ready(function(){
     
-    $('body').on({ 'mousemove' : function( e ){
-        console.log( 'holi' )
-        let clientX = e.originalEvent.clientX
-        let clientY = e.originalEvent.clientX 
-        $('#cursor').css({
-            'left' : clientX + 'px',
-            'top' : clientY + 'px'
-        })
-    }})
-
+   $('body').on('mousemove', function(e) {
+    console.clear();
+    console.log( e.originalEvent)
+    $('#cursor')
+    })
 
 })
