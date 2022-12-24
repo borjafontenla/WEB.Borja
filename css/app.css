@@ -90,6 +90,7 @@ body {
     -font-smooth:"always";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    cursor: none;
     
     
 }
@@ -221,6 +222,7 @@ body {
     text-align: center;
     position: relative;
     z-index: 2;
+    cursor: none;
 }
 .seccion{
     width: 100%;
@@ -242,6 +244,7 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    list-style: none;
 }
 .seccion .ul .li{
     
@@ -255,6 +258,7 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     transition:  all .5s ease;
+    list-style: none;
 }
 .seccion .ul .a:hover{
     border-color:black ;
@@ -291,15 +295,14 @@ body {
     
 }
 .seccion .h3A:hover{
-    transform: scale(1.2)
+    transform: scale(1.2);
 }
 
- .rrss {
+.seccion1 .ul .rrss {
+    list-style-type: none;
     
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center ;
-    align-items: center;
+    
+    
 }
 .seccion1{
     width: 100%;
@@ -307,7 +310,7 @@ body {
     
     margin: 1em 0;
     padding: 2em;
-    
+    cursor: none;
 
     display: flex;
     flex-flow: column wrap;
