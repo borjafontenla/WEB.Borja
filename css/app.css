@@ -98,7 +98,7 @@ body {
     color: #000;
     line-height: 1.6;
     position: relative;
-    font-family: sans-serif;
+    
     overflow: scroll;
     
     
@@ -114,7 +114,7 @@ body {
   }
   .lines .line {
     position: absolute;
-    width: 5px;
+    width: 3px;
     height: 100%;
     top: 0;
     left: 50%;
@@ -130,9 +130,9 @@ body {
     top: -50%;
     left: 0;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(75%, #ffffff), to(#ffffff));
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ff0b0b 100%);
     -webkit-animation: run 5s 0s infinite;
-            animation: run 5s 0s infinite;
+            animation: run 10s 0s infinite;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
@@ -143,14 +143,14 @@ body {
   }
   .lines .line:nth-child(1)::after {
     -webkit-animation-delay: 2s;
-            animation-delay: 2s;
+            animation-delay: 0s;
   }
   .lines .line:nth-child(3) {
     margin-left: 25%;
   }
   .lines .line:nth-child(3)::after {
-    -webkit-animation-delay: 2.5s;
-            animation-delay: 2.5s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
   }
   
   
